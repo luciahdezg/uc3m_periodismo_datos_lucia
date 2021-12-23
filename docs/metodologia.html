@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Pagina web de Lucía</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Lucia Hernandez</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="p1.html">P1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="p2.html">P2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="p3.html">P3</a>
+          </li>
+          li class="nav-item">
+            <a class="nav-link" href="metodologia.html">Metodologia</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <h1 id="metodolog-a-de-la-ltima-pr-ctica-de-recopilaci-n-de-trabajos-de-periodismo-de-datos">Metodología de la última práctica de recopilación de trabajos de periodismo de datos</h1>
+<p align="justify">Esta página web tiene el objetivo de ofrecer la función de recopilar los trabajos realizados hasta ahora en la asignatura de Periodismo de Datos. Para ello he adaptado las prácticas ya realizadas al formato html, mediante los siguientes pasos que voy a explicar a continuación.</p>
+<h2 id="proceso-de-creaci-n-de-la-p-gina-web">Proceso de creación de la Página web</h2>
+<p align="justify">En primer lugar, he organizado toda la información en carpetas que contenían las prácticas y las imágenes que ya había utilizado previamente para que el proceso fuera más sencillo. Además he ordenado las práticas que había realizado en una carpeta llamada &quot;prácticas&quot; a través del comando mkdir y de esta manera se concretan las prácticas en carpetas distintas para falicitar su uso. De la misma manera, he tenido que cambiar la ruta de las imágenes que había utilizado en cada práctica y he tenido que hacerlo una por una desde la terminal, en nano.</p>
+<p align="justify">A partir de tener los archivos ordenados, he creado una nueva carpeta llamada &quot;docs&quot; para guardar toda la información que tenía recopilada de antes y la que he requerido para hacer la pagina web, todas en formato html. Para llegar a ello, en la terminal, después de haber descargado el programa Pandoc, he convertido los archivos que tenía en formato .md a formato html y a partir de ello, he ido cambiando el formato de los archivos. Después de transformar los archivos, los he subido a github desde la terminal con los comandos git add, git commit y git push. Además de añadir estos documentos a la carpeta de docs, también he añadido la carpeta de imágenes que había organizado anteriormente. </p>
+<p align="justify">Una vez terminado este proceso, siguiendo los pasos determinados, me he descargado la carpeta de  “bootstrap-5.1.3-examples.zip”, mediante el enlace de ejemplos que estaba indicado en el repositorio de github sobre las explicaciones de la práctica. En este caso, al ser un archivo en formato zip. he tenido que descomprimirlo mediante el comando unzip -| en la terminal. Dentro de este archivo, he cogido las carpetas que iba a utilizar que como indicaba eran: sticky-footer-navbar, css y js y las he introducido en mi carpeta de docs mediante el comando mv.</p>
+<p align="justify">Una vez descargados los archivos que necesitaba he comenzado a cambiar el index.html para realizar los cambios que necesitaba para crear mi propia página web. En primer lugar, he cambiado el título y la descripción de la plantilla para personalizarlos con los mios. Seguidamente, he pegado cada una de las prácticas en html, anteriormente transformadas, en cada apartado de &quot;begin page content&quot;. También he cambiado el apartado &quot;header&quot; para modificar el menú superior para que ponga mi nombre &quot;Lucia Hernandez&quot;. Además he añadadido las rutas de cada práctica que había introducido anteriormente, y las he titulado con lo que quería que apareciese en la web que en este caso para indicar el nombre de cada práctica las he nombrado como &quot;p1&quot;, &quot;p2&quot; y &quot;p3&quot;. Por último, en cuanto a la web, he modificado la parte inferior donde ponía &quot;place sticky footer content here&quot; para poner &quot;Universidad Carlos III&quot;. A partir de estas modificaciones, he guardado los cambios realizados.</p>
+<p align="justify">Una vez guardado los cambios y realizado las últimas modificaciones he subido el contenido de las prácticas a github. Después al subirlo a github he activado la función de la página web de mi repositorio yendo a settings y despues a Pages. Aquí he modificado las opciones a &quot;main&quot; y &quot;docs&quot; y he conseguido el link de la página web .</p>
+<p align="justify">Por último, he creado una nueva carpeta llamada "src" con los archivos en csv de los trabajo que realicé en la tercera práctica para crear los gráficos con los datos filtrados en openrefine del archivo "feliz" a datawrapper. Y en esta misma carpeta he incluido los contenidos realizados en github de la asignatira hasta el momento en una carpeta .zip. 
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Universidad Carlos III</span>
+  </div>
+</footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

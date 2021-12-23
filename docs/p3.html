@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Pagina web de Lucía</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Lucia Hernandez</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="p1.html">P1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="p2.html">P2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="p3.html">P3</a>
+          </li>
+          li class="nav-item">
+            <a class="nav-link" href="metodologia.html">Metodologia</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <h1 id="pr-ctica-3-visualizaci-n-de-gr-ficos">Práctica 3 | Visualización de gráficos</h1>
+<p align="justify">
+Para la tercera práctica he realizado tres gráficos con los datos de Tresca con el objetivo de realizar una visualización de la variación de los datos en el tiempo. En este caso, he organizado los datos más relevantes de tres periodos estacionales, en primavera, en verano, y en invierno. Para extraer los datos que necesitaba he recurrido a Openrefine y Excel y para visualizarlos de forma gráfica he utilizado Datawrapper.
+</p>
+
+<h2 id="proceso-de-realizaci-n-de-pr-ctica">Proceso de realización de práctica</h2>
+<p align="justify">Para realizar estos gráficos he llevado a cabo el mismo procedimiento con rangos de fechas distintos, por tanto voy a explicar cómo he ejecutado este proceso de selección y visualización de datos y posteriormente analizaré los resultados obetenidos con estos gráficos. </p>
+<p align="justify">En primer lugar, he introducido los datos del archivo <em>Feliz</em> de <em>Tresca</em> en Open Refine en formato <em>csv</em>, he seleccionado la separación por comas, he eliminado la opción &quot;use character&quot; y &quot;parte next&quot; y se ha creado a continuación un proyecto de 5981 filas. Después eliminé los datos que aparecían del año 1970 con una faceta de línea de tiempo y me he quedado, por tanto, con 5971 filas. </p>
+<p align="justify">Posteriormente he seleccionado los datos que me interesaban en Openrefine, mendiante la selección de tiempo para realizar los tres gráficos correspondientes. Y para ello, antes de nada he convertido la columna fecha en <em>formato fecha</em>, ya que tenía <em>formato de texto</em> y de esta manera no se podían filtrar los datos. Por tanto, una vez cambiado el formato he procedido a filtrar los datos del archivo por sus respectivas fechas y los he organizado   de forma conceptual por estaciones. Además he eliminado las columnas que ya sabía que no iba a utilizar llegado a este punto, que eran la 4 y la 5. También, en la columna 6, añadí el número 0 en los espacios vacíos, pero luego no utilicé esa columna.</p>
+<p align="justify"> A partir de esto, decidí organizar los gráficos con el concepto de temporadas estacionales, sin embargo, esta organización no corresponde exactamente con los periodos estacionales oficiales, sino que comprenden los meses aproximados en los que predominan estas estaciones y por esta razón las he titulado con estos términos. De manera que, la organización temporal de los gráficos corresponde, en el primer  gráfico a la época de <strong>primavera</strong> y contiene la organización de los <em>hastags</em> mencionados en tweets que comprenden los meses entre marzo y junio de 2020. El segundo gráfico titulado <strong>Verano</strong>, contiene todos los <em>hastags</em> publicados entre los meses de junio y septiembre de 2020, y por último el gráfico de <strong>Invierno</strong> contiene los <em>hastags</em> publicados de noviembre de 2020 a enero de 2021.</p>
+<p align="justify">Seguidamente, en la columna de los <em>hastags</em> he utilizado la función <em>facetfound</em> para contar todos los tweets que tuvieran las mismas palabras, es decir el mismo <em>hastag</em> repetido. Esto me ha generado una nueva columna en la que aparecía el recuento de las veces en las que se repetían los tweets correspondientes. Depués, estos datos los he exportado en formato <em>csv</em> a Excel.</p>
+<p align="justify">En Excel, primero he quitado los valores repetidos en <em>anular duplicados</em>, para quedarme con sólo con una representacion de cada tweet y para plasmarlo en el gráfico de forma visual. Después los he ordenado de mayor a menor número de repeticiones y he seleccionado los 20 más relevantes, es decir, los mas repetidos de cada seleccion de datos. </p>
+<p align="justify">Por último, despues de seleccionar y guardar estos datos en Excel (en formato <em>csv</em>), he importado estas hojas de Excel en Datawrapper en la opción <em>upload data</em> y para obtener el gráfico que  buscaba, he escondido las columnas que no me interesaban con la opción de <em>Hide column from visualization</em>, en este caso para quedarme solo con los tweets y sus repeticiones. Por tanto, se ha realizado el gráfico correspondiente con los datos introducidos, he cambiado el nombre de cada uno para titularlos con sus características. Y por último, para representarlos he elegido el grafico de barras en los tres para llevar a cabo un mejor analisis comparativo.</p>
+<h2 id="resultado-gr-ficos">Resultado Gráficos</h2>
+<p align="justify">El objetivo de la selección de estos datos es observar la difencia de las felicitaciones y de las festividades según el avance temporal del año, en un aspecto generalizado.</p>
+<h3 id="gr-fico-1">Gráfico 1</h3>
+<p><img src="Imagenes/gla9d-tweets-primavera.png"
+   alt="alt text"
+   width="1100" 
+    height="700"></p>
+
+    <iframe title="Tweets Primavera" aria-label="Column Chart" id="datawrapper-chart-zDfU8" src="https://datawrapper.dwcdn.net/zDfU8/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+    </script>
+
+
+<p align="justify">En el primer gráfico predominan las felicitaciones de los días de la semana, en cabeza en el gráfico. Continua con felicitaciones generales y también las correspondientes con el Día del Padre y el Día de la madre que se encuentran en este espacio temporal, puesto que son el el mes de marzo y mayo, respetivamente. Finalemente, en los últimos aparece de forma escasa alguna felitación de la Pascua de Resurrección.</p>
+<h3 id="gr-fico-2">Gráfico 2</h3>
+<iframe title="Tweets verano" aria-label="Column Chart" id="datawrapper-chart-PxbpF" src="https://datawrapper.dwcdn.net/PxbpF/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+<p align="justify">En los tweets correspondientes a los meses de verano, predomina de nuevo las felicitaciones a los días de la semana, algunas correspondientes a festividades fuera de estas fechas y también algún feliz cumpleaños, en el que se habrá viralizado el <em>hastag</em> correspondiente.</p>
+<h3 id="gr-fico-3">Gráfico 3</h3>
+<iframe title="Tweets Invierno" aria-label="Column Chart" id="datawrapper-chart-0L3s9" src="https://datawrapper.dwcdn.net/0L3s9/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+<p align="justify">En este último gráfico, de nuevo predominan las felicitaciones a los días de la semana, muy por encima del resto. Y en este caso, puesto que las fechas corresponden a las festividades de Navidad, comienzan las felicitaciones navideñas y de fin de año.</p>
+
+
+<h1>Conclusión</h1>
+<p align="justify"> 
+Analizando los tres gráficos distintos, me ha llamado la atención que predominen en todos las felicitaciones de los días de la semana. Demuestra los ánimos y la postividad con la que los twitteros frecuentes, comienzan el día de la semana. Además es curioso y parádojico que, el día que precede siempre es el martes, puesto que va unido a la mala suerte. Especialmente me resulta sorprendente que en la época de invierno no predominen las festividades navideñas o la felicitación de año, que suelen ser bastante frecuentes. En conclusión, me parece interesante analizar como a pesar de que van cambiando los intereses y las rutinas de la población, (por lo menos de la población activa en twitter) según el mes o la época del año en año en la que se encuentren, tienen en común las mismas felicitaciones durante todo el año.</p> 
+</p>
+</li>
+
+
+
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Universidad Carlos III</span>
+  </div>
+</footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
